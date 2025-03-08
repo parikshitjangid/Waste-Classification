@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Garbage Classifier</title>
+    <!-- Load TensorFlow.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <!-- Link to CSS file (if you have one) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Upload an image of garbage to classify</h1>
+    <!-- File input for image upload -->
+    <input type="file" id="imageInput" accept="image/*">
+    <br>
+    <!-- Image preview area -->
+    <img id="preview" src="" alt="Image preview" style="display: none;">
+    <br>
+    <!-- Classify button, disabled until model loads -->
+    <button id="classifyButton" disabled>Classify</button>
+    <!-- Result display -->
+    <p id="result"></p>
+    <!-- Model loading status -->
+    <p id="loadingModel">Loading model...</p>
+    <!-- Link to JavaScript files -->
+    <script src="script.js"></script>
+    <script src="enhance.js"></script>
+</body>
+</html>
